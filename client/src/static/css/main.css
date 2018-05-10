@@ -30,7 +30,7 @@ font-weight: 300;
 }
 /* Navigation bar */
  div.menuItems > nav > ul{
-    margin-left: 160px!important;
+    /* margin-left: 160px!important; */
 }
  div.menuItems > nav > ul > li{
 padding-left: 100px;
@@ -136,7 +136,8 @@ div.menuItems > nav{
     min-width: 730px;
 }
 .container{
-    padding-left: 280px;
+    /* padding-left: 280px; */
+    margin: 0 auto;
 }
 .peerList{
     margin-left: 300px;
@@ -162,7 +163,8 @@ div.menuItems > nav{
     margin-left: 150px;
 }
 .dashboard{
-    margin-left: 300px;
+    /* margin-left: 300px; */
+    margin: 0 auto;
 }
 .wip{
     color:#bdc3c7;

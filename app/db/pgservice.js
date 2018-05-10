@@ -22,12 +22,15 @@ var logger = helper.getLogger('pgservice');
 
 const connectionString = 'postgres://' + pgconfig.username + ':' + pgconfig.passwd + '@' +pgconfig.host +':' + pgconfig.port + '/' + pgconfig.database;
 console.log(connectionString);
-const client = new Client({
+var client = new Client({
     connectionString: connectionString,
 });
 
 
 function handleDisconnect() {
+    client = new Client({
+        connectionString: connectionString,
+    });
 
     var port = pgconfig.port ? pgconfig.port : "5432";
 
